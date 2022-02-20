@@ -4,11 +4,11 @@ import { Navigation }  from "./components"
 
 function App() {
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
         <Navigation />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

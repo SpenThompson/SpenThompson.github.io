@@ -1,8 +1,7 @@
-import { NavbarBrand } from "reactstrap";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const NavBrand = styled(NavbarBrand)`
+export const NavBrand = styled(Link)`
     color: #FFC700;
     display: flex;
     font-size: 30px;
@@ -16,16 +15,17 @@ export const NavBrand = styled(NavbarBrand)`
 `;
 
 export const NavLink = styled(Link)`
-    color: #0388AO;
+    color: #00C2BA;
     display: flex;
     align-items: center;
     text-decoration: none;
     cursor: pointer;
+    padding: 0 1rem;
     &.active {
-        color: #00C2BA
+        color: #FFF7F7
     }
     &:hover {
-        color: #00C2BA;
+        color: #FFF7F7;
         text-decoration: none:
         transition: 200ms ease-in;
     }
