@@ -1,18 +1,17 @@
 import React from "react";
-import { Collapse, DropdownToggle, DropdownMenu, DropdownItem, Nav, Navbar, NavbarToggler, NavItem, UncontrolledDropdown  } from "reactstrap";
-import { NavBrand, NavLink } from "./NavigationElements" 
+import { Collapse, DropdownMenu, DropdownItem, Nav, NavbarToggler, NavItem, UncontrolledDropdown  } from "reactstrap";
+import { CustDropdownToggle, CustNavbar, NavBrand, NavLink } from "./NavigationElements" 
 
 
 function Navigation(props) {
     return(
         <div>
-           <Navbar
+           <CustNavbar
              style = {{backgroundColor: "#190B2A"}}
-             expand= "lg"
+             expand= "md"
              fixed= "top"
              container
              dark
-             full
             >
                 <NavBrand to ="/">
                     Spencer Thompson
@@ -20,10 +19,11 @@ function Navigation(props) {
                 <NavbarToggler onClick={function noRefCheck(){}} />
                 <Collapse navbar>
                     <Nav
-                        className="me-auto"
+                        className="container-fluid me-auto"
                         navbar
+                        
                     >
-                        <NavItem>
+                        <NavItem className="ms-auto">
                             <NavLink to = "/">
                                 Home
                             </NavLink>
@@ -37,26 +37,29 @@ function Navigation(props) {
                             inNavbar
                             nav
                         >
-                            <DropdownToggle
+                            <CustDropdownToggle
                                 caret
                                 nav
+                                color = "primary"
                             > 
                                 Portfolio
-                            </DropdownToggle>
-                            <DropdownItem>
-                                <NavLink to = "/app-examples">
-                                    Application Examples
-                                </NavLink>
-                            </DropdownItem>
-                            <DropdownItem>
-                                <NavLink to = "/github">
-                                    Github
-                                </NavLink> 
-                            </DropdownItem>
+                            </CustDropdownToggle>
+                            <DropdownMenu style = {{backgroundColor: "#190B2A"}} dark >
+                                <DropdownItem>
+                                    <NavLink to = "/app-examples">
+                                        Application Examples
+                                    </NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink to = "/github">
+                                        Github
+                                    </NavLink> 
+                                </DropdownItem>
+                            </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
                 </Collapse>
-            </Navbar>
+            </CustNavbar>
         </div>    
     )
 }
