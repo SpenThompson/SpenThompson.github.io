@@ -10,8 +10,9 @@ export const CustNavbar = styled(Navbar)`
 `;
 
 export const LogoImage = styled.img`
-    width: 10%;
-    height: 10%;
+    max-width: 75px;
+    max-height: 75px;
+    display: inline-block;
     marginTop: -7;
     align-items: center;
     padding: 7px 10px;
@@ -24,6 +25,7 @@ export const NavBrand = styled(Link)`
     align-items: center;
     text-decoration: none;
     cursor: pointer;
+    font-family: "Asher Punk", monospace;
     &:hover {
         text-decoration: none;
         color: #FFC700
@@ -38,6 +40,7 @@ export const NavLink = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     padding: 0 1rem;
+    font-family: 'DMMono', monospace;
     &.active {
         color: #FFF7F7
     }
@@ -56,6 +59,7 @@ export const OutsideNavLink = styled.a`
     text-decoration: none;
     cursor: pointer;
     padding: 0 1rem;
+    font-family: 'DMMono', monospace;
     &.active {
         color: #FFF7F7
     }
@@ -71,6 +75,12 @@ export const CustDropdownToggle = styled(DropdownToggle)`
     display: flex;
     font-size: 16px;
     align-items: center;
+    font-family: 'DMMono', monospace;
     text-decoration: none;
     padding: 0 1rem;
+    &:hover {
+        color: #FFF7F7 !important;
+        text-decoration: none !important;
+        transition: 200ms ease-in !important;
+    }
 `;

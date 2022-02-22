@@ -1,10 +1,14 @@
-import React from "react";
+import { React, useState } from "react";
 import { Collapse, DropdownMenu, DropdownItem, Nav, NavbarToggler, NavItem, UncontrolledDropdown  } from "reactstrap";
 import { CustDropdownToggle, CustNavbar, LogoImage, NavBrand, NavLink, OutsideNavLink } from "./NavigationElements" 
 import Logo from "./Resources/Logo.png"
 
 
+
 function Navigation(props) {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+
     return(
         <div>
            <CustNavbar
@@ -14,18 +18,18 @@ function Navigation(props) {
              container
              dark
             >
+                <LogoImage src={Logo}/>
                 <NavBrand to ="/">
-                    <LogoImage src={Logo}/>
                     Spencer Thompson
                 </NavBrand>
-                <NavbarToggler onClick={function noRefCheck(){}} />
-                <Collapse navbar>
+                <NavbarToggler onClick={toggle} className="me-2 ms-auto"/>
+                <Collapse isOpen={isOpen} navbar>
                     <Nav
-                        className="container-fluid me-auto"
+                        className="container-fluid"
                         navbar
                         
                     >
-                        <NavItem className="ms-auto">
+                        <NavItem>
                             <NavLink to = "/">
                                 Home
                             </NavLink>
@@ -61,6 +65,31 @@ function Navigation(props) {
                                         <OutsideNavLink href={"https://github.com/SpenThompson"} target="_blank" rel="noopener noreferrer">
                                             Github
                                         </OutsideNavLink> 
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+                        </NavItem>
+                        <NavItem>
+                            <UncontrolledDropdown
+                                inNavbar
+                                nav
+                            >
+                                <CustDropdownToggle
+                                    caret
+                                    nav
+                                >
+                                    Other Work
+                                </CustDropdownToggle>
+                                <DropdownMenu style = {{backgroundColor: "#190B2A"}} dark>
+                                    <DropdownItem>
+                                        <NavLink to = "/essays">
+                                            Film and Essays
+                                        </NavLink>
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        <NavLink to = "/podcasts">
+                                            Podcasts
+                                        </NavLink>
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
