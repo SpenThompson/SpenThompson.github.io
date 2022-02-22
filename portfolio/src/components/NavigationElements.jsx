@@ -9,6 +9,14 @@ export const CustNavbar = styled(Navbar)`
     z-index: 12;
 `;
 
+export const LogoImage = styled.img`
+    width: 10%;
+    height: 10%;
+    marginTop: -7;
+    align-items: center;
+    padding: 7px 10px;
+`;
+
 export const NavBrand = styled(Link)`
     color: #FFC700;
     display: flex;
@@ -26,6 +34,7 @@ export const NavLink = styled(Link)`
     color: #00C2BA;
     display: flex;
     align-items: center;
+    font-size: 16px;
     text-decoration: none;
     cursor: pointer;
     padding: 0 1rem;
@@ -34,14 +43,33 @@ export const NavLink = styled(Link)`
     }
     &:hover {
         color: #FFF7F7;
-        text-decoration: none:
+        text-decoration: none;
         transition: 200ms ease-in;
     }
 `;  
 
-export const CustDropdownToggle = styled(DropdownToggle)`
+export const OutsideNavLink = styled.a`
     color: #00C2BA;
     display: flex;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 1rem;
+    &.active {
+        color: #FFF7F7
+    }
+    &:hover {
+        color: #FFF7F7;
+        text-decoration: none;
+        transition: 200ms ease-in;
+    }
+`;
+
+export const CustDropdownToggle = styled(DropdownToggle)`
+    color: #00C2BA !important;
+    display: flex;
+    font-size: 16px;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;

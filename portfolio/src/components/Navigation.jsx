@@ -1,6 +1,7 @@
 import React from "react";
 import { Collapse, DropdownMenu, DropdownItem, Nav, NavbarToggler, NavItem, UncontrolledDropdown  } from "reactstrap";
-import { CustDropdownToggle, CustNavbar, NavBrand, NavLink } from "./NavigationElements" 
+import { CustDropdownToggle, CustNavbar, LogoImage, NavBrand, NavLink, OutsideNavLink } from "./NavigationElements" 
+import Logo from "./Resources/Logo.png"
 
 
 function Navigation(props) {
@@ -14,6 +15,7 @@ function Navigation(props) {
              dark
             >
                 <NavBrand to ="/">
+                    <LogoImage src={Logo}/>
                     Spencer Thompson
                 </NavBrand>
                 <NavbarToggler onClick={function noRefCheck(){}} />
@@ -33,30 +35,41 @@ function Navigation(props) {
                                 About
                             </NavLink>
                         </NavItem>
-                        <UncontrolledDropdown
-                            inNavbar
-                            nav
-                        >
-                            <CustDropdownToggle
-                                caret
+                        <NavItem>
+                            <NavLink to ="/blog">
+                                Blog
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <UncontrolledDropdown
+                                inNavbar
                                 nav
-                                color = "primary"
-                            > 
-                                Portfolio
-                            </CustDropdownToggle>
-                            <DropdownMenu style = {{backgroundColor: "#190B2A"}} dark >
-                                <DropdownItem>
-                                    <NavLink to = "/app-examples">
-                                        Application Examples
-                                    </NavLink>
-                                </DropdownItem>
-                                <DropdownItem>
-                                    <NavLink to = "/github">
-                                        Github
-                                    </NavLink> 
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
+                            >
+                                <CustDropdownToggle
+                                    caret
+                                    nav
+                                > 
+                                    Portfolio
+                                </CustDropdownToggle>
+                                <DropdownMenu style = {{backgroundColor: "#190B2A"}} dark >
+                                    <DropdownItem>
+                                        <NavLink to = "/app-examples">
+                                            Application Examples
+                                        </NavLink>
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        <OutsideNavLink href={"https://github.com/SpenThompson"} target="_blank" rel="noopener noreferrer">
+                                            Github
+                                        </OutsideNavLink> 
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink to ="/contact">
+                                Contact
+                            </NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </CustNavbar>
