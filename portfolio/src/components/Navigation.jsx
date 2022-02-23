@@ -19,18 +19,17 @@ function Navigation(props) {
              dark
             >
                 <LogoImage src={Logo}/>
-                <NavBrand to ="/">
+                <NavBrand to ="/" className="ml-auto">
                     Spencer Thompson
                 </NavBrand>
                 <NavbarToggler onClick={toggle} className="me-2 ms-auto"/>
-                <Collapse isOpen={isOpen} navbar>
+                <Collapse isOpen={isOpen} navbar className="text-align-center">
                     <Nav
-                        className="container-fluid"
+                        className="container-fluid justify-content-center"
                         navbar
-                        
                     >
                         <NavItem>
-                            <NavLink to = "/">
+                            <NavLink to = "/" className="ms-auto">
                                 Home
                             </NavLink>
                         </NavItem>
@@ -57,8 +56,8 @@ function Navigation(props) {
                                 </CustDropdownToggle>
                                 <DropdownMenu style = {{backgroundColor: "#190B2A"}} dark >
                                     <DropdownItem>
-                                        <NavLink to = "/app-examples">
-                                            Application Examples
+                                        <NavLink to = "/web-examples">
+                                            Web Dev Work
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
@@ -78,7 +77,7 @@ function Navigation(props) {
                                     caret
                                     nav
                                 >
-                                    Other Work
+                                    Other Projects
                                 </CustDropdownToggle>
                                 <DropdownMenu style = {{backgroundColor: "#190B2A"}} dark>
                                     <DropdownItem>

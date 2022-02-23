@@ -3,10 +3,12 @@ import { DropdownToggle, Navbar } from "reactstrap";
 import styled from "styled-components";
 
 export const CustNavbar = styled(Navbar)`
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     padding: 0.2rem calc((100vw - 1000px) /2);
+    vertical-align: top;
     z-index: 12;
+    float: none;
 `;
 
 export const LogoImage = styled.img`
@@ -20,7 +22,7 @@ export const LogoImage = styled.img`
 
 export const NavBrand = styled(Link)`
     color: #FFC700;
-    display: flex;
+    display: inline-block;
     font-size: 30px;
     align-items: center;
     text-decoration: none;
@@ -34,9 +36,9 @@ export const NavBrand = styled(Link)`
 
 export const NavLink = styled(Link)`
     color: #00C2BA;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     cursor: pointer;
     padding: 0 1rem;
@@ -53,9 +55,9 @@ export const NavLink = styled(Link)`
 
 export const OutsideNavLink = styled.a`
     color: #00C2BA;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     cursor: pointer;
     padding: 0 1rem;
@@ -72,12 +74,13 @@ export const OutsideNavLink = styled.a`
 
 export const CustDropdownToggle = styled(DropdownToggle)`
     color: #00C2BA !important;
-    display: flex;
-    font-size: 16px;
-    align-items: center;
+    display: inline-block;
+    font-size: 14px;
+    align-items: inherit;
     font-family: 'DMMono', monospace;
     text-decoration: none;
     padding: 0 1rem;
+    font-family: 'DMMono', monospace;
     &:hover {
         color: #FFF7F7 !important;
         text-decoration: none !important;
