@@ -7,14 +7,8 @@ function App() {
     <div className="App">
       <Router>
         <Navigation />
+        <br />
         <ul>
-          <li>Filler</li>
-          <li>Filler</li>
-          <li>Filler</li>
-          <li>Filler</li>
-          <li>Filler</li>
-          <li>Filler</li>
-          <li>Filler</li>
           <li>Filler</li>
           <li>Filler</li>
         </ul>

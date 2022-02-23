@@ -1,4 +1,4 @@
-import { NavLink as Link } from "react-router-dom"
+import { NavLink as Link } from "react-router-dom";
 import styled from 'styled-components';
 
 export const CustFooter = styled.div`
@@ -64,6 +64,18 @@ export const Custhr = styled.hr`
     display: block;
     border-color: #FF8FCF;
     background-color: #FF8FCF;
+`;
+
+export const FooterSocialButton = styled.a`
+    color: #00C2BA;
+    font-size: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    &:hover {
+        color: #FFF7F7;
+        text-decoration: none;
+        transition: 200ms ease-in;
+      }
 `;
 
 
