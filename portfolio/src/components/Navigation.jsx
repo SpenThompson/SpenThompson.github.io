@@ -44,6 +44,11 @@ function Navigation(props) {
                             </NavLink>
                         </NavItem>
                         <NavItem>
+                            <NavLink to ="/contact">
+                                Contact
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
                             <UncontrolledDropdown
                                 inNavbar
                                 nav
@@ -92,11 +97,6 @@ function Navigation(props) {
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink to ="/contact">
-                                Contact
-                            </NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

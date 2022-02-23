@@ -1,12 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navigation }  from "./components"
+import { Navigation, Footer }  from "./components"
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navigation />
+        <ul>
+          <li>Filler</li>
+          <li>Filler</li>
+          <li>Filler</li>
+          <li>Filler</li>
+          <li>Filler</li>
+          <li>Filler</li>
+          <li>Filler</li>
+          <li>Filler</li>
+          <li>Filler</li>
+        </ul>
+        <Footer />
       </Router>
     </div>
   );
