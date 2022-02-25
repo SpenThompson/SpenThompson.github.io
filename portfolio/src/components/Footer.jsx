@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from 'reactstrap';
 import { CustFooter, Custhr, FooterTitle, FooterHeading, FooterLink, FooterLinks, FooterText, FooterSocialButton } from "./FooterElements";
-import { IoLogoGithub, IoLogoDiscord, IoLogoInstagram, IoLogoLinkedin, IoLogoPinterest, IoLogoSteam, IoLogoTwitch, IoLogoTwitter} from "react-icons/io5";
+import { IoLogoGithub, IoLogoDiscord, IoLogoInstagram, IoLogoLinkedin, IoLogoPinterest, IoLogoSteam, IoLogoTiktok, IoLogoTwitch, IoLogoTwitter} from "react-icons/io5";
 
 function Footer(props) {
     return (
@@ -9,7 +9,7 @@ function Footer(props) {
             <CustFooter>
                 <Container>
                     <Row>
-                        <Col xs="3">
+                        <Col xs="3" className="justify-content-center">
                             <FooterTitle>Spencer Thompson</FooterTitle>
                         </Col>
                         <Col md="3">
@@ -39,6 +39,9 @@ function Footer(props) {
                             </FooterSocialButton>
                             <FooterSocialButton href={"https://www.pinterest.com/jamesspencerthompson/"} target="_blank" rel="noopener noreferrer">
                                 <IoLogoPinterest/>
+                            </FooterSocialButton>
+                            <FooterSocialButton href={"https://www.tiktok.com/@dispencedat"} target="_blank" rel="noopener noreferrer">
+                                <IoLogoTiktok/>
                             </FooterSocialButton>
                             <FooterSocialButton href={"https://steamcommunity.com/id/repulsa_Rita/"} target="_blank" rel="noopener noreferrer">
                                 <IoLogoSteam/>
