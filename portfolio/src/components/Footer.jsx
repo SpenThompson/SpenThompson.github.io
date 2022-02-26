@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from 'reactstrap';
 import { CustFooter, Custhr, FooterTitle, FooterHeading, FooterLink, FooterLinks, FooterText, FooterSocialButton } from "./FooterElements";
 import { IoLogoGithub, IoLogoDiscord, IoLogoInstagram, IoLogoLinkedin, IoLogoPinterest, IoLogoSteam, IoLogoTiktok, IoLogoTwitch, IoLogoTwitter} from "react-icons/io5";
+import { SiLetterboxd } from "react-icons/si";
 
 function Footer(props) {
     return (
@@ -36,6 +37,9 @@ function Footer(props) {
                             </FooterSocialButton>
                             <FooterSocialButton href={"https://www.instagram.com/spencer.thomp/"} target="_blank" rel="noopener noreferrer">
                                 <IoLogoInstagram/>
+                            </FooterSocialButton>
+                            <FooterSocialButton href={"https://letterboxd.com/KayYass/"} target="_blank" rel="noopener noreferrer">
+                                <SiLetterboxd/>
                             </FooterSocialButton>
                             <FooterSocialButton href={"https://www.pinterest.com/jamesspencerthompson/"} target="_blank" rel="noopener noreferrer">
                                 <IoLogoPinterest/>

@@ -11,7 +11,6 @@ function App() {
         <br />
         <ul>
           <li>Filler</li>
-          <li>Filler</li>
         </ul>
         <Routes>
           <Route exact path="/" element={<Home />}/>
