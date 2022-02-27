@@ -7,7 +7,7 @@ function Home(){
     return(
         <div className="home" style={{backgroundColor: "#FFF7F7"}}>
             <Jumbotron className="home-jumbo" img={img}>
-                <Heading className="eye-catch">You have the vision <br/> I have the know-how <br /> Let's make art together</Heading>
+                <Heading className="eye-catch">You have the vision <br/> I have the know-how <br /> Let's make something beautiful</Heading>
             </Jumbotron>
             <Pageblock className="light">
                 <Container className="d-flex justify-content-center" fluid>
@@ -20,27 +20,6 @@ function Home(){
                         </Row>
                         <Row>
                             <Text>This website is my home base for all of my current projects. Here you'll find a few examples of Web Applications I've worked on, essays I've written on Film and Literature, and other projects I'm currently producing!</Text>
-                        </Row>
-                    </Col>
-                </Container>
-            </Pageblock>
-            <Pageblock>
-                <Container classname="d-flex justify-content-center" fluid>
-                    <Col md="6">
-                        <Row>
-                            <Heading>Beans</Heading>
-                        </Row>
-                    </Col>
-                    <Col md="6">
-
-                    </Col>
-                </Container>
-            </Pageblock>
-            <Pageblock className="light">
-                <Container classname="d-flex justify-content-center" fluid>
-                    <Col>
-                        <Row>
-                            <Heading>Beans</Heading>
                         </Row>
                     </Col>
                 </Container>

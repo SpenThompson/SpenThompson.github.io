@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { Collapse, DropdownMenu, DropdownItem, Nav, NavbarToggler, NavItem, UncontrolledDropdown  } from "reactstrap";
 import { CustDropdownToggle, CustNavbar, LogoImage, NavBrand, NavLink, OutsideNavLink } from "./NavigationElements" 
 import Logo from "./Resources/Logo.png"
+import resume from "./Resources/Resume.pdf"
 
 
 
@@ -69,6 +70,11 @@ function Navigation(props) {
                                         <OutsideNavLink href={"https://github.com/SpenThompson"} target="_blank" rel="noopener noreferrer">
                                             Github
                                         </OutsideNavLink> 
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        <OutsideNavLink href={resume} target="_blank" rel="noopener noreferrer">
+                                            Resumé
+                                        </OutsideNavLink>
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>

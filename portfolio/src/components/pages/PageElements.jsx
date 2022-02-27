@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Jumbotron = styled.div`
     padding-bottom: 2rem;
-    margin-bottom: 2rem;
     text-align: center;
     &.home-jumbo{
         padding-top: 6rem;
@@ -36,11 +35,37 @@ export const Text = styled.p`
     text-align: center;
     vertical-align: middle;
     white-space: pre-line; 
+    &.in-dark{
+        color: #FFF7F7;
+    }
 `;
 
 export const Pageblock = styled.div`
     background-color: #190B2A;
+    padding: 2rem 2rem;
     &.light{
         background-color: #FFF7F7;
+    }
+`;
+
+export const Image = styled.img`
+    min-width: 100px;
+`;
+
+export const TextLink = styled.a`
+    font-family: 'DMMono', monospace;
+    display: inline-block;
+    font-size: 16px;
+    color: #190B2A;
+    text-align: center;
+    vertical-align: middle;
+    white-space: pre-line;
+    &.in-dark{
+        color: #FFF7F7;
+    }
+    &:hover{
+        color: #00C2BA;
+        text-decoration: none;
+        transition: 200ms ease-in;
     }
 `;
