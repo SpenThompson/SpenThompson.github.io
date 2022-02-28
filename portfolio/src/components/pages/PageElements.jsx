@@ -54,8 +54,10 @@ export const Pageblock = styled.div`
 `;
 
 export const Image = styled.img`
-    min-width: 100px;
+    min-width: 10%;
+    text-align: center;
     &.styled{
+        min-width: 150px;
         box-shadow: 5px 5px #FF8FCF;
     }
     &.posters{
