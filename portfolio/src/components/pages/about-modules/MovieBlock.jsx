@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, PopoverHeader, PopoverBody, UncontrolledPopover } from 'reactstrap';
-import { Image, PosterButton } from './PageElements';
+import { Image, PosterButton } from '../PageElements';
 import sunsetboulevard from './Resources/SunsetBoulevard.jpg';
 import muppet from './Resources/MuppetMovie.jpeg';
 import parasite from './Resources/Parasite.jpg';

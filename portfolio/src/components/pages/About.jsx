@@ -1,17 +1,17 @@
 import React from "react";
 import { Col, Container, Row } from 'reactstrap';
 import { Heading, Image, Text, TextLink, Pageblock} from './PageElements';
-import ButtonBlock from './ButtonBlock';
+import MovieBlock from './about-modules/MovieBlock';
+import PetBlock from './about-modules/PetBlock';
+import StoryBlock from './about-modules/StoryBlock';
 import trafalgar from './Resources/Trafalgar.jpg';
-import tofu from './Resources/Tofu.jpeg';
-import autumn from './Resources/Autumn.JPG';
+
 
 function About(){
     return(
         <div className="about" style={{backgroundColor: "#FFF7F7"}}>
             <Pageblock className="light">
                 <Container className="d-flex justify-content-center" fluid>
-                        <Col xs='1'/>
                         <Col md='5'>
                             <Row>
                                 <Heading style={{textAlign: "left"}}>
@@ -35,7 +35,7 @@ function About(){
                                 </Text>
                             </Row>
                         </Col>
-                        <Col md='4'>
+                        <Col md='3'>
                             <Container className="d-flex justify-content-center" fluid>
                                 <Image src={trafalgar} className="img-fluid styled" width="75%" alt="Spencer in Trafalgar Square"/>
                             </Container>
@@ -46,29 +46,41 @@ function About(){
                 <Container className="d-flex justify-content-center" fluid>
                     <Col>
                         <Row>
-                            <Heading>
-                                My Favorite Films and Games
-                            </Heading>
+                            <Heading>My Story</Heading>
                         </Row>
-                        <ButtonBlock />
+                        <StoryBlock />
                     </Col>
                 </Container>
             </Pageblock>
             <Pageblock className="light">
                 <Container className="d-flex justify-content-center" fluid>
-                    <Container>
-                        <Heading>Pets</Heading>
-                    </Container>
-                    <Container className="d-flex justify-content-center" fluid>
+                    <Col>
                         <Row>
-                            <Col>
-                                <Text>Test</Text>
-                            </Col>
-                            <Col>
-                                <Text>Test</Text>
-                            </Col>
+                            <Heading>Pets</Heading>
                         </Row>
-                    </Container>
+                        <PetBlock />
+                    </Col>
+                </Container>
+            </Pageblock>
+            <Pageblock>
+                <Container className="d-flex justify-content-center" fluid>
+                    <Col>
+                        <Row>
+                            <Heading>
+                                My Favorite Films and Games
+                            </Heading>
+                        </Row>
+                        <MovieBlock />
+                    </Col>
+                </Container>
+            </Pageblock>
+            <Pageblock className="light">
+                <Container className="d-flex justify-content-center" fluid>
+                    <Col>
+                        <Row>
+                            <Heading>Placeholder</Heading>
+                        </Row>
+                    </Col>
                 </Container>
             </Pageblock>
         </div>

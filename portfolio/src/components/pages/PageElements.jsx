@@ -56,6 +56,7 @@ export const Pageblock = styled.div`
 export const Image = styled.img`
     min-width: 10%;
     text-align: center;
+    height: auto;
     &.styled{
         min-width: 150px;
         box-shadow: 5px 5px #FF8FCF;
@@ -101,4 +102,12 @@ export const TextLink = styled.a`
         text-decoration: none;
         transition: 200ms ease-in;
     }
+`;
+
+export const Custhr = styled.hr`
+    display: block;
+    border: none;
+    height: 5px;
+    opacity: 1;
+    background-color: #FF8FCF;
 `;
