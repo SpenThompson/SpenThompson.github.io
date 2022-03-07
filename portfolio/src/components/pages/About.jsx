@@ -14,7 +14,7 @@ function About(){
                 <Container className="d-flex justify-content-center" fluid>
                         <Col md='5'>
                             <Row>
-                                <Heading style={{textAlign: "left"}}>
+                                <Heading style={{textAlign: "left"}} className="section-header">
                                     About Spencer Thompson
                                 </Heading>
                             </Row>
@@ -27,7 +27,7 @@ function About(){
                                     <br/>
                                     While I'm professionally focused in on computer science, my interests span all over art and genres.  In addition to my Computer Science studies, I also major in English with a film emphasis.  
                                     My studies there focus on the effects of children's media on society at large, but I'm also an encyclopedia for horror movies and movie musicals. My thesis hones in on <i>Zootopia</i> specifically, 
-                                    and how it acts a response to the Black Lives Matter movement.
+                                    and how it both fails and succeeds a response to the Black Lives Matter movement.
                                     <br/>
                                     <br/>
                                     I devote my free time to one of my hundreds of hobbies: I sew, play Dungeons & Dragons, draw digitally, garden, obsess over video games, and read tarot cards to name a few of the more prominent ones.  
@@ -46,7 +46,7 @@ function About(){
                 <Container className="d-flex justify-content-center" fluid>
                     <Col>
                         <Row>
-                            <Heading>My Story</Heading>
+                            <Heading className="section-header">My Story</Heading>
                         </Row>
                         <StoryBlock />
                     </Col>
@@ -56,7 +56,7 @@ function About(){
                 <Container className="d-flex justify-content-center" fluid>
                     <Col>
                         <Row>
-                            <Heading>Pets</Heading>
+                            <Heading className="section-header">Pets</Heading>
                         </Row>
                         <PetBlock />
                     </Col>
@@ -66,7 +66,7 @@ function About(){
                 <Container className="d-flex justify-content-center" fluid>
                     <Col>
                         <Row>
-                            <Heading>
+                            <Heading className="section-header">
                                 My Favorite Films and Games
                             </Heading>
                         </Row>
@@ -78,7 +78,7 @@ function About(){
                 <Container className="d-flex justify-content-center" fluid>
                     <Col>
                         <Row>
-                            <Heading>Placeholder</Heading>
+                            <Heading className="section-header">Placeholder</Heading>
                         </Row>
                     </Col>
                 </Container>

@@ -30,6 +30,9 @@ export const Heading = styled.h1`
         font-family: "Asher Punk", monospace;
         color: #FFF7F7;  
     }
+    &.section-header{
+        font-size: 35px;
+    }
 `
 
 export const Text = styled.p`
