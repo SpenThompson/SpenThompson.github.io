@@ -14,7 +14,7 @@ function StoryBlock(){
                         skills.  In the meantime, I became fascinated with graphic design, understanding marketability from a visual perspective, and the importance of visual appeal.<br/><br/>
                         When I came to Hendrix College, I instantly began upon the Computer Science track.  At the same time, in the strangest stroke of luck, I was able to get into an Introductory Film Criticism class.  Both set me on my path of double majoring with my second major becoming an English major with a 
                         film emphasis.  I've constantly and consistently left my mark at Hendrix.  I founded and lead student organizations, participated in each tradition, and all the while, kept up my studies.<br/><br/>
-                        Now, I live with my partner and our multiple pets (see them below!) in Fayetteville, AR.  I've listed out a couple of my favorite movies and the video games that inspire me below as well.
+                        Now, I live with my partner, Logan, and our multiple pets (see them below!) in Fayetteville, AR.  I've listed out a couple of my favorite movies and the video games that inspire me below as well.  Finally, check out the last part of this page if you're interested in the adventures I take!
                     </Text>
                 </Col>
             </Container>

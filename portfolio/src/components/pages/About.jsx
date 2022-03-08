@@ -4,6 +4,7 @@ import { Heading, Image, Text, TextLink, Pageblock} from './PageElements';
 import MovieBlock from './about-modules/MovieBlock';
 import PetBlock from './about-modules/PetBlock';
 import StoryBlock from './about-modules/StoryBlock';
+import AdventureBlock from './about-modules/AdventureBlock';
 import trafalgar from './Resources/Trafalgar.jpg';
 
 
@@ -78,8 +79,9 @@ function About(){
                 <Container className="d-flex justify-content-center" fluid>
                     <Col>
                         <Row>
-                            <Heading className="section-header">Placeholder</Heading>
+                            <Heading className="section-header">My Adventures</Heading>
                         </Row>
+                        <AdventureBlock />
                     </Col>
                 </Container>
             </Pageblock>
